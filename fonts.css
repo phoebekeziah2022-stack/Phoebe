@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('/fonts/D-DIN.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('/fonts/D-DIN-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'D-DIN', sans-serif;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Phoebe/static/css/main.e759436f.css",
+    "main.js": "/Phoebe/static/js/main.e492cebf.js",
+    "static/js/453.034a0079.chunk.js": "/Phoebe/static/js/453.034a0079.chunk.js",
+    "index.html": "/Phoebe/index.html",
+    "main.e759436f.css.map": "/Phoebe/static/css/main.e759436f.css.map",
+    "main.e492cebf.js.map": "/Phoebe/static/js/main.e492cebf.js.map",
+    "453.034a0079.chunk.js.map": "/Phoebe/static/js/453.034a0079.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e759436f.css",
+    "static/js/main.e492cebf.js"
+  ]
+}
