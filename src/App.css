@@ -1,4 +1,4 @@
-/* Background + overlay */
+
 .app-container {
   position: relative;
   background-size: cover;
@@ -19,7 +19,6 @@
   z-index: 1;
 }
 
-/* Navbar */
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
