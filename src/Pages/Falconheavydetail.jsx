@@ -15,7 +15,6 @@ function Falconheavydetail() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 py-10 animate-fade-in">
-      {/* Banner */}
       <div className="w-full h-72 rounded-xl overflow-hidden shadow-xl mb-10 transform hover:scale-105 transition duration-700 ease-in-out">
         <img
           src={launch.image}
@@ -24,7 +23,6 @@ function Falconheavydetail() {
         />
       </div>
 
-      {/* Content */}
       <div className="max-w-4xl mx-auto space-y-8 text-center">
         <h1 className="text-5xl font-extrabold text-amber-400 tracking-wide animate-slide-in">
           {launch.name}
