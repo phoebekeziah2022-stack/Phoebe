@@ -43,9 +43,7 @@ function Home() {
         backgroundPosition: "center",
       }}
     >
-      {/* Top Spacing */}
       <div className="mt-10 flex flex-col items-center">
-        {/* ✨ Hero Section */}
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 drop-shadow-lg">
             Welcome to SpaceX
@@ -60,8 +58,6 @@ function Home() {
             View Upcoming Launches
           </button>
         </div>
-
-        {/* 🚀 Launch Image Box (smaller) */}
         <div
           onClick={() => navigate(items[index].link)}
           className="mt-12 w-[440px] md:w-[550px] bg-white/20 backdrop-blur-md rounded-2xl overflow-hidden border border-white/30 cursor-pointer hover:scale-105 transition-transform"
@@ -84,8 +80,6 @@ function Home() {
             </AnimatePresence>
           </div>
         </div>
-
-        {/* 📦 Text BELOW image */}
         <div
           onClick={() => navigate(items[index].link)}
           className="w-[440px] md:w-[550px] bg-[#0a0a2a]/70 backdrop-blur-sm rounded-b-2xl shadow-lg px-5 py-4 text-center mt-[-4px] border border-white/20 cursor-pointer hover:bg-[#0a0a2a]/90 transition"
