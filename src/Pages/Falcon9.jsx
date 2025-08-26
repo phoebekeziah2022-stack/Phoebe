@@ -1,11 +1,10 @@
 function Falcon9() {
   return (
     <div className="bg-black text-white min-h-screen p-8">
-      {/* Banner */}
       <div
         className="w-full h-[70vh] bg-cover bg-center relative rounded-2xl shadow-lg"
         style={{
-          backgroundImage: 'url(/images/falcon9.jpg)', // replace with your Falcon 9 image
+          backgroundImage: 'url(/images/falcon9.jpg)', 
         }}
       >
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -13,7 +12,6 @@ function Falcon9() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="mt-12 max-w-4xl mx-auto space-y-6">
         <p className="text-lg leading-relaxed text-gray-300">
           Falcon 9 is a reusable, two-stage rocket designed and manufactured by
