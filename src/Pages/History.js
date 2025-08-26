@@ -51,10 +51,7 @@ function History() {
       <h1 className="text-5xl font-bold text-blue-300 mb-8 text-center">
         SpaceX History
       </h1>
-
-      {/* Timeline */}
       <div className="relative max-w-5xl mx-auto">
-        {/* Vertical Line */}
         <div className="absolute left-8 top-0 w-1 h-full bg-amber-300"></div>
 
         {eventsData.map((event, index) => {
@@ -85,8 +82,6 @@ function History() {
             <div key={index} className="relative mb-12 pl-16">
               {/* Timeline Dot */}
               <div className="absolute w-5 h-5 bg-amber-300 rounded-full left-6 top-4"></div>
-
-              {/* If event has link → wrap card in Link */}
               {event.link ? (
                 <Link to={event.link}>{CardContent}</Link>
               ) : (
