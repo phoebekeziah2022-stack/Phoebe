@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Helper to create URL-friendly slugs
 const toSlug = (name) => name.toLowerCase().replace(/\s+/g, "-");
 
-// Launch data
 const launchesData = [
   {
     name: "FalconSat",
@@ -79,12 +77,10 @@ function Launches() {
   const [filterRocket, setFilterRocket] = useState("");
   const navigate = useNavigate();
 
-  // Helper to determine if launch is upcoming
   const isUpcoming = (launch) => {
     return new Date(launch.date_utc) > new Date();
   };
 
-  // FIXED: filter by rocket OR name
   const filteredLaunches = (launches) =>
     launches.filter(
       (launch) =>
@@ -102,7 +98,6 @@ function Launches() {
         SpaceX Launches
       </h1>
 
-      {/* Filter */}
       <div className="mb-6 flex flex-wrap justify-center gap-4">
         <input
           type="text"
@@ -119,7 +114,6 @@ function Launches() {
         </button>
       </div>
 
-      {/* Past Launches */}
       <h2 className="text-3xl font-bold text-amber-300 mt-8 mb-4">
         Past Launches
       </h2>
@@ -167,7 +161,6 @@ function Launches() {
         </table>
       </div>
 
-      {/* Upcoming Launches */}
       <h2 className="text-3xl font-bold text-yellow-400 mt-8 mb-2">
         Upcoming Launches
       </h2>
