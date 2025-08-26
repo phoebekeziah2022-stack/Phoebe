@@ -3,7 +3,6 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 function Layout() {
   const location = useLocation();
 
-  // Backgrounds for each page
   const backgrounds = {
     "/": "/images/home.jpg",
     "/history": "/images/history.jpg",
@@ -20,7 +19,6 @@ function Layout() {
     >
       <div className="absolute inset-0 bg-black/60 z-0" />
 
-      {/* Navbar */}
       <nav
         className="relative z-10 flex items-center justify-between bg-black/50 px-12"
         style={{
@@ -28,22 +26,20 @@ function Layout() {
           boxShadow: "0 4px 12px rgba(255, 255, 255, 0.1)",
           backdropFilter: "blur(8px) saturate(150%)",
           WebkitBackdropFilter: "blur(8px) saturate(150%)",
-          height: "90px", // fixed navbar height
+          height: "90px", 
         }}
       >
-        {/* Left: Logo */}
         <Link to="/" className="flex items-center">
           <img
             src="/images/logo.png"
             alt="SpaceX Logo"
             className="h-20 w-auto hover:scale-105 transition-transform"
             style={{
-              maxHeight: "80px", // logo fits neatly inside bar
+              maxHeight: "80px",
             }}
           />
         </Link>
 
-        {/* Center: Menu */}
         <div className="flex justify-center gap-14">
           <Link
             to="/"
@@ -71,11 +67,9 @@ function Layout() {
           </Link>
         </div>
 
-        {/* Right: Spacer to balance */}
         <div style={{ width: "80px" }} />
       </nav>
 
-      {/* Main Content */}
       <div className="relative z-10 p-8">
         <Outlet />
       </div>
