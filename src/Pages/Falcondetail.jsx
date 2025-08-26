@@ -15,7 +15,6 @@ function Falcondetail() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 py-10 animate-fade-in">
-      {/* Banner Section */}
       <div className="w-full h-72 rounded-xl overflow-hidden shadow-xl mb-10 transform hover:scale-105 transition duration-700 ease-in-out">
         <img
           src={launch.image}
@@ -24,19 +23,15 @@ function Falcondetail() {
         />
       </div>
 
-      {/* Launch Content */}
       <div className="max-w-4xl mx-auto space-y-8 text-center">
-        {/* Centered Title */}
         <h1 className="text-6xl font-extrabold text-amber-400 tracking-widest animate-slide-in">
           {launch.name}
         </h1>
 
-        {/* Inspirational Quote */}
         <p className="text-xl text-gray-400 italic animate-fade-in delay-100">
           “Failure is an option here. If things are not failing, you are not innovating enough.” – Elon Musk
         </p>
 
-        {/* Theoretical Narrative Paragraph */}
         <p className="text-lg text-gray-300 leading-relaxed animate-fade-in delay-200">
           The journey began aboard <span className="text-amber-300 font-semibold">{launch.rocket}</span>, the very first vehicle in SpaceX’s lineage. On the early morning of{" "}
           <span className="text-amber-300 font-semibold">
@@ -47,12 +42,10 @@ function Falcondetail() {
           </span>, this launch didn’t just end a flight — it ignited a future.
         </p>
 
-        {/* Full Description */}
         <div className="bg-black/50 border border-amber-400 p-6 rounded-lg text-gray-200 whitespace-pre-line animate-fade-in delay-300 shadow-xl text-left">
           {launch.details}
         </div>
 
-        {/* Back Button */}
         <button
           onClick={() => navigate("/launches")}
           className="mt-10 px-6 py-3 bg-amber-400 text-black font-semibold rounded-md hover:bg-amber-500 transition duration-300 ease-in-out shadow-lg animate-fade-in delay-500"
