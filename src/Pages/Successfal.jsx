@@ -4,19 +4,16 @@ import { Link } from "react-router-dom";
 function Successfal() {
   return (
     <div className="pt-6 px-8 max-w-5xl mx-auto">
-      {/* Title */}
       <h1 className="text-4xl font-bold text-center mb-6 text-green-400">
         Successful Falcon 9 Landing 🛰️🌍
       </h1>
 
-      {/* Image */}
       <img
         src="/images/hf5.jpg"
         alt="Successful Falcon 9 Landing"
         className="w-full h-80 object-cover object-top rounded-lg shadow-lg mb-6"
       />
 
-      {/* Text Box */}
       <div className="bg-black/40 backdrop-blur-md rounded-xl shadow-lg p-6">
         <p className="text-lg leading-relaxed text-gray-200 mb-4">
           On <span className="font-semibold">December 21, 2015</span>, SpaceX
@@ -37,7 +34,6 @@ function Successfal() {
           SpaceX on the path toward developing a fully reusable launch system.
         </p>
 
-        {/* Back button */}
         <div className="flex justify-center">
           <Link
             to="/history"
