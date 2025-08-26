@@ -13,12 +13,11 @@ function Dragon8detail() {
 This mission marked a major milestone as SpaceX successfully landed the Falcon 9’s first stage on the autonomous drone ship “Of Course I Still Love You” — a giant leap toward reusable rocketry.
 
 The success of CRS-8 not only advanced scientific research aboard the ISS but also reinforced SpaceX’s commitment to revolutionizing spaceflight with cost-effective, reusable technology.`,
-    image: "/images/l5.jpg", // update path if needed
+    image: "/images/l5.jpg", 
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 py-10 animate-fade-in">
-      {/* Banner Section */}
       <div className="w-full h-72 rounded-xl overflow-hidden shadow-xl mb-10 transform hover:scale-105 transition duration-700 ease-in-out">
         <img
           src={launch.image}
@@ -26,20 +25,15 @@ The success of CRS-8 not only advanced scientific research aboard the ISS but al
           className="w-full h-full object-cover "
         />
       </div>
-
-      {/* Launch Content */}
       <div className="max-w-4xl mx-auto space-y-8 text-center">
-        {/* Title */}
         <h1 className="text-6xl font-extrabold text-amber-400 tracking-widest animate-slide-in">
           {launch.name}
         </h1>
 
-        {/* Quote */}
         <p className="text-xl text-gray-400 italic animate-fade-in delay-100">
           “The future belongs to those who believe in the beauty of their dreams.” – Eleanor Roosevelt
         </p>
 
-        {/* Narrative */}
         <p className="text-lg text-gray-300 leading-relaxed animate-fade-in delay-200">
           The mission was launched aboard the <span className="text-amber-300 font-semibold">{launch.rocket}</span> rocket on{" "}
           <span className="text-amber-300 font-semibold">
@@ -50,12 +44,10 @@ The success of CRS-8 not only advanced scientific research aboard the ISS but al
           </span>, this mission showcased SpaceX’s growing prowess in space logistics and reusable rocketry.
         </p>
 
-        {/* Details */}
         <div className="bg-black/50 border border-amber-400 p-6 rounded-lg text-gray-200 whitespace-pre-line animate-fade-in delay-300 shadow-xl text-left">
           {launch.details}
         </div>
-
-        {/* Back Button */}
+        
         <button
           onClick={() => navigate("/launches")}
           className="mt-10 px-6 py-3 bg-amber-400 text-black font-semibold rounded-md hover:bg-amber-500 transition duration-300 ease-in-out shadow-lg animate-fade-in delay-500"
