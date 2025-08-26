@@ -80,7 +80,6 @@ function History() {
 
           return (
             <div key={index} className="relative mb-12 pl-16">
-              {/* Timeline Dot */}
               <div className="absolute w-5 h-5 bg-amber-300 rounded-full left-6 top-4"></div>
               {event.link ? (
                 <Link to={event.link}>{CardContent}</Link>
