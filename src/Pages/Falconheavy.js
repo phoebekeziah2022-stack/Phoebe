@@ -1,7 +1,6 @@
 function FalconHeavy() {
   return (
     <div className="bg-black text-white min-h-screen p-8">
-      {/* Banner */}
       <div
         className="w-full h-[70vh] bg-cover bg-center relative rounded-2xl shadow-lg"
         style={{
@@ -13,7 +12,6 @@ function FalconHeavy() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="mt-12 max-w-4xl mx-auto space-y-6">
         <p className="text-lg leading-relaxed text-gray-300">
           Falcon Heavy is a super heavy-lift launch vehicle with partial
