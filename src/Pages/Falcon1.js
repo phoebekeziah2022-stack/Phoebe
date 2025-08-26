@@ -1,7 +1,6 @@
 function Falcon1() {
   return (
     <div className="bg-black text-white min-h-screen p-8">
-      {/* Banner */}
       <div
         className="w-full h-[70vh] bg-cover bg-center relative rounded-2xl shadow-lg"
         style={{
@@ -13,7 +12,6 @@ function Falcon1() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="mt-12 max-w-4xl mx-auto space-y-6">
         <p className="text-lg leading-relaxed text-gray-300">
           Falcon 1 became the first privately-developed liquid-fuel launch
