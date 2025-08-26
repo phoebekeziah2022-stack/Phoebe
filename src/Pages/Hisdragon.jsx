@@ -4,19 +4,16 @@ import React from "react";
 function Hisdragon() {
   return (
     <div className="pt-4 px-8 max-w-5xl mx-auto">
-      {/* Title closer to the top */}
       <h1 className="text-4xl font-bold text-center mb-6 text-amber-300">
         First Successful Dragon Launch 🚀
       </h1>
 
-      {/* Wide but shorter image */}
       <img
         src="/images/hf2.jpg"
         alt="First Successful Dragon Launch"
         className="w-full h-80 object-cover object-top rounded-lg shadow-lg mb-6"
       />
 
-      {/* Text Box with same style as Hisfalcon */}
       <div className="bg-black/40 backdrop-blur-md rounded-xl shadow-lg p-6">
         <p className="text-lg leading-relaxed text-gray-200 mb-4">
           On <span className="font-semibold">June 4, 2010</span>, SpaceX
