@@ -30,7 +30,6 @@ function Rockets() {
 
   return (
     <div className="relative text-white bg-black">
-      {/* Banner image */}
       <div
         className="w-full h-[90vh] bg-cover bg-center relative -mt-[32px]"
         style={{
@@ -45,7 +44,6 @@ function Rockets() {
         </div>
       </div>
 
-      {/* Grid section */}
       <div
         className="relative z-10 -mt-48 p-8 
                    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8
@@ -53,12 +51,12 @@ function Rockets() {
       >
         {rockets.map((rocket, index) => (
           <Link
-            to={rocket.detailPage} // ✅ Link instead of <a>
+            to={rocket.detailPage} 
             key={index}
             className="bg-black/40 backdrop-blur-sm p-4 rounded-2xl shadow-lg 
                        hover:scale-105 hover:bg-black/60 transition duration-300 flex items-center gap-4"
           >
-            {/* Rocket Image */}
+
             <div className="w-24 h-24 flex-shrink-0">
               <img
                 src={rocket.image}
@@ -67,7 +65,6 @@ function Rockets() {
               />
             </div>
 
-            {/* Rocket Text */}
             <div>
               <h2 className="text-2xl font-bold mb-1 text-amber-300">
                 {rocket.name}
